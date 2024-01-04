@@ -1,0 +1,11 @@
+[package]
+name = "castor-provider"
+version.workspace = true
+edition.workspace = true
+
+[features]
+cuda = ["snarkvm/cuda"]
+
+[dependencies]
+castor-core = { workspace = true }
+snarkvm = { workspace = true }
