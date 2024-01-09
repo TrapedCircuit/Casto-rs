@@ -1,0 +1,9 @@
+[package]
+name = "contract"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+castor-core = { workspace = true }
+snarkvm = { workspace = true }

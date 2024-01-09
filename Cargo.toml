@@ -3,11 +3,12 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace]
-members = ["core", "provider"]
+members = ["contract", "core", "provider"]
 resolver = "2"
 
 [workspace.dependencies]
 castor-core = { path = "core" }
 castor-provider = { path = "provider" }
+castor-contract = { path = "contract" }
 snarkvm = { version = "0.16.15" }
 rusty-hook = "0.11.2"
