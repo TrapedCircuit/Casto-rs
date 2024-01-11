@@ -7,7 +7,7 @@ members = ["contract", "core", "provider"]
 resolver = "2"
 
 [workspace.dependencies]
-castor-core = { path = "core" }
+castor = { path = "core" }
 castor-provider = { path = "provider" }
 castor-contract = { path = "contract" }
 snarkvm = { version = "0.16.15" }

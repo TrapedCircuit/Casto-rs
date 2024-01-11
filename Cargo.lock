@@ -307,15 +307,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2bd12c1caf447e69cd4528f47f94d203fd2582878ecb9e9465484c4148a8223"
 
 [[package]]
-name = "castor-core"
+name = "castor"
 version = "0.1.0"
+dependencies = [
+ "snarkvm",
+]
 
 [[package]]
 name = "castor-provider"
 version = "0.1.0"
 dependencies = [
- "castor-core",
- "snarkvm",
+ "castor",
+ "reqwest",
 ]
 
 [[package]]
@@ -412,7 +415,7 @@ checksum = "f7144d30dcf0fafbce74250a3963025d8d52177934239851c917d29f1df280c2"
 name = "contract"
 version = "0.1.0"
 dependencies = [
- "castor-core",
+ "castor",
  "snarkvm",
 ]
 

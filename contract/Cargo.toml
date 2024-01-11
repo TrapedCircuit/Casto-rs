@@ -5,5 +5,5 @@ edition.workspace = true
 
 
 [dependencies]
-castor-core = { workspace = true }
+castor = { workspace = true }
 snarkvm = { workspace = true }
